@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0", maximum-scale="1.0, user-scalable=no">
+    <title>Elite Tactical Apparel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>  
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="SF.png" alt="SF logo">
+        
+        </div>
+      
+        <h1>Elite Tactical Apparel</h1>
+      </header>
+        <div class="navigation-bar">
+        <nav>
+            <ul>
+                <li><a href="#men">Men</a> 
+                  <ul class="dropdown">
+                  <li><a href="#sale" style="color: red;">Sale</a></li>
+                  <li><a href="#clothing">Clothing</a></li>
+                  <li><a href="#boots">Boots</a></li>
+                  
+                </ul>
+                </li>
+                <li><a href="#women">Women</a>
+                  <ul class="dropdown">
+                  <li><a href="#sale" style="color: red;">Sale</a></li>
+                  <li><a href="#clothing1">Clothing</a></li>
+                  <li><a href="#boots1">Boots</a></li>
+                  
+                </ul>
+                </li>
+                <li><a href="#sale">Sale</a></li>
+                  <!-- search function | backend not allowed + couldnt think anything else for mobile optimisation, so taking it out
+                  <form action="/search" method="get" class="search-form">
+                    <input type="text" name="query" placeholder="Search for items and brands. . ." class="search-input">
+                    <button type="submit" class="search-btn">Search</button>
+                </form> -->
+                <div style="text-align: right; width: 100%; padding-right: 450px;" class="hide-on-mobile">
+                    <h3 style="color: white;">"FREE STANDARD DELIVERY WHEN YOU SPEND £49"</h3>
+                  </div>
+                  
+                  
+                
+                <button class="basket-button" onclick="location.href='#cart';">
+                <img src="checkout.png" alt="checkout Basket" class="basket-icon">
+                <span style="color: white; font-weight: bold;">Basket</span>
+              </button>
+           
+            </ul>
+        </nav>
+      </div>
+
+      <div class="navigation-bar1">
+        <h4>"FREE STANDARD DELIVERY WHEN YOU SPEND £49"</h4>
+      </div>
+      
+
+
+
+      </div>
+
+    
+
+    <!-- male clothing -->
+    <section id="clothing" class="clothing-section">
+      <h1>Male Clothing</h1>
+      <h2>"Because Even Rambo Needs Fresh Threads!"</h2>
+        
+      <div class="clothing-grid">
+          <div class="clothing">
+              <img src="shirt1.avif" alt="Product 1">
+              <h3>Crye Shirt G4</h3>
+              <p>£120.00</p>
+              <button class="add-to-cart" onclick="addToCart('Crye Shirt G4', 120.00)">Add to Cart</button>
+          </div>
+          <div class="clothing">
+              <img src="trouser1.avif" alt="Product 2">
+              <h3>Crye Trouser G4</h3>
+              <p>£150.00</p>
+              <button class="add-to-cart" onclick="addToCart('Crye Trouser G4', 150.00)">Add to Cart</button>
+          </div>
+          <div class="clothing">
+              <img src="jacket1.avif" alt="Product 3">
+              <h3>Crye Jacket</h3>
+              <p>£380.00</p>
+              <button class="add-to-cart" onclick="addToCart('Crye Jacket', 380.00)">Add to Cart</button>
+          </div>
+          <div class="clothing">
+              <img src="ghillie1.avif" alt="Product 4">
+              <h3>Ghillie Tactical Kit</h3>
+              <p>£250.00</p>
+              <button class="add-to-cart" onclick="addToCart('Ghillie Tactical Kit', 250.00)">Add to Cart</button>
+          </div>
+      </div>
+  </section>
+
+  <!-- BOOTS -->
+  <section id="boots" class="boots-section">
+    <h1>Boots</h1>
+    <h2>"These boots were made for walking... right into your cart!"</h2>
+      
+    <div class="boots-grid">
+        <div class="boots">
+            <img src="boots.jpg" alt="Product 1">
+            <h3>Scarpa Mountain wear</h3>
+            <p>£600.00</p>
+            <button class="add-to-cart" onclick="addToCart('Scarpa Mountain wear', 600.00)">Add to Cart</button>
+        </div>
+        <div class="boots">
+            <img src="boots1.avif" alt="Product 2">
+            <h3>Scarpa Approach Shoe</h3>
+            <p>£180.00</p>
+            <button class="add-to-cart" onclick="addToCart('Scarpa Approach Shoe', 180.00)">Add to Cart</button>
+        </div>
+        <div class="boots">
+            <img src="boots2.avif" alt="Product 3">
+            <h3>Lasportiva Approach Shoe</h3>
+            <p>£150.00</p>
+            <button class="add-to-cart" onclick="addToCart('Lasportiva Approach Shoe', 150.00)">Add to Cart</button>
+        </div>
+        <div class="boots">
+            <img src="boots3.avif" alt="Product 4">
+            <h3>Swing</h3>
+            <p>£95.00</p>
+            <button class="add-to-cart" onclick="addToCart('swing', 95.00)">Add to Cart</button>
+        </div>
+    </div>
+</section>
+
+    <!-- sale Section -->
+    <section id="sale" class="sale-section">
+      <h1 style="color: red;">!Sale !Sale !Sale</h1>
+        <h2>"Big discounts, small regret. Shop now!"</h2>
+       
+        <div class="sale-grid">
+            <div class="sale">
+                <img src="sale1.avif" alt="Product 1">
+                <h3>Combat Boots</h3>
+                <p>£80.00</p>
+                <button class="add-to-cart" onclick="addToCart('Combat Boots', 80.00)">Add to Cart</button>
+            </div>
+            <div class="sale">
+                <img src="sale2.avif" alt="Product 2">
+                <h3>Tactical Backpack</h3>
+                <p>£140.00</p>
+                <button class="add-to-cart" onclick="addToCart('Tactical Backpack', 140.00)">Add to Cart</button>
+            </div>
+            <div class="sale">
+                <img src="sale3.avif" alt="Product 3">
+                <h3>Military Jacket</h3>
+                <p>£300.00</p>
+                <button class="add-to-cart" onclick="addToCart('Military Jacket', 300.00)">Add to Cart</button>
+            </div>
+            <div class="sale">
+                <img src="sale4.jpg" alt="Product 4">
+                <h3>Rifle Case</h3>
+                <p>£95.00</p>
+                <button class="add-to-cart" onclick="addToCart('Rifle Case', 95.00)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Section -->
+    <section id="cart" class="cart-section">
+        <h2>Your cart</h2>
+        <ul id="cart-items"></ul>
+        <p id="total-price">Total: $0.00</p>
+        <button class="checkout-btn" onclick="openCheckoutModal()">Checkout</button>
+    </section>
+
+    <!-- Checkout Modal -->
+    <div id="checkout-modal" class="modal">
+        <div class="modal-content">
+            <h3>Checkout Summary</h3>
+            <div id="checkout-details"></div>
+            <button id="confirm-checkout">Confirm Purchase</button>
+        </div>
+        <button id="close-modal" class="close-button">Close</button>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
